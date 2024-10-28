@@ -21,8 +21,8 @@ export default function RecentPortofolio() {
                 <p className="font font-bold text-[24px] text-center">My Recent Work</p>
                 <p className="my-5">FINISH</p>
                 <div className="flex justify-start flex-wrap gap-16">
-                    <FinishCart description="Website dengan isi hasil karya karya 3D saya selama menjadi 3D Generalist" title="3D Work Arts" img={img1} link="https://front-end-vol1-9k4fk9srj-farraos-abdillahs-projects.vercel.app/" />
-                    <FinishCart description="Website dengan tema memperkenalkan sebuah company detail dari company, service yang diberikan, organisasi yang ada didalamnya" title="Company Profile - Formici" img={img2} link="https://compro-formici-1tldkrz7e-farraos-abdillahs-projects.vercel.app/" />
+                    <FinishCart description="Website dengan isi hasil karya karya 3D saya selama menjadi 3D Generalist" title="3D Work Arts" img={img1} link="https://front-end-vol1.vercel.app/" />
+                    <FinishCart description="Website dengan tema memperkenalkan sebuah company detail dari company, service yang diberikan, organisasi yang ada didalamnya" title="Company Profile - Formici" img={img2} link="https://compro-purwadhika.vercel.app/" />
                     <FinishCart description="Website untuk berbelanja kebutuhan sehari hari menyediakan produk-produk yang digunakan dirumah sehari-hari" title="Grocery Store App - Bask-it" img={img3} link="https://jcwd040801.purwadhikabootcamp.com/" />
                 </div>
                 <p className="my-5">UN-PUBLISH</p>
