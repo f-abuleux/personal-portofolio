@@ -4,7 +4,7 @@
     background-size: 40px 40px;
     background-color: white;
     width: 100%;
-    height: 350vh;
+    height: 450vh;
 }
 
 #workart{
@@ -13,7 +13,7 @@
     background-size: 40px 40px;
     background-color: white;
     width: 100%;
-    height: 200vh;
+    height: 175vh;
 }
 
 @media (max-width: 640px) {

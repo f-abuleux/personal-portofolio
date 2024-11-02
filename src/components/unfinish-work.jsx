@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-export function UnfinishCart({ description, title, img, img2, img3, img4, img5, img6,  }) {
+export function UnfinishCart({ description, title, img, img2, img3, img4, img5, img6, link }) {
     const [more, setMore] = useState(false)
 
     const handleMore = () => {
@@ -15,7 +15,10 @@ export function UnfinishCart({ description, title, img, img2, img3, img4, img5, 
                 </div>
                 <p className="font font-bold text-[20px] text-left p-4">{typeof title == "string" ? title : "No Title"}</p>
                 <p className="text-left h-[100px] px-4 pb-2 text-[14px]">{typeof description == "string" ? description : "No Description"} </p>
+                <div className="flex items-center justify-between">
                 <button onClick={handleMore} className="font-bold p-4 hover:scale-105 duration-200">More</button>
+                <a  href={link} className="font-bold p-4 hover:scale-105 duration-200">Details</a>
+                </div>
                 {
                     more && (
                         <div className="w-[325px] h-full flex flex-col ">

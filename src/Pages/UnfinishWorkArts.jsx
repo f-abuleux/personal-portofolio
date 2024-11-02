@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 import htmx from '../assets/logos/htmx.svg'
 
 
-export default function WorkArt({ specsimg1, specsimg2, specsimg3, specsimg4, specsimg5, notes, website, repository, desicription, title, hero }) {
+export default function UnfinishWorkArt({ specsimg1, specsimg2, specsimg3, specsimg4, specsimg5, notes, website, repository, desicription, title, hero }) {
     const note = <p className="text-[12px] sm:mx-14 ">Notes : <span className='font-bold'>"npm install"</span> then <span className='font-bold'>"npm run dev"</span> run localhost</p>
     const forkadeskrisen = 'Forkaa adalah sebuah galeri digital yang menampilkan hasil karya 3D yang saya buat selama mendalami berbagai aspek dari dunia 3D, mulai dari modeling, texturing, hingga animasi. Melalui situs ini, saya ingin memperlihatkan perkembangan dan eksplorasi saya dalam seni visual tiga dimensi, yang mencakup penciptaan bentuk, pewarnaan dan tekstur detail, serta pengaturan gerakan yang memperkaya pengalaman visual.'
 
@@ -67,14 +67,14 @@ export default function WorkArt({ specsimg1, specsimg2, specsimg3, specsimg4, sp
                 {
                     notes
                 }
-                <p className="mt-10 sm:mx-8 fl font-bold">Website : </p>
+                {/* <p className="mt-10 sm:mx-8 fl font-bold">Website : </p>
                 <div className=' sm:mx-8 bg-gray-600/10 shadow-md backdrop-blur-sm p-3 rounded-[10px] text-gray-500 flex justify-between items-center'>
                     <a href={website} target='_blank' className='hover:underline duration-300 ml-2'>{website}</a>
                     <button onClick={copyToClipboardWebsite} className='active:bg-gray-400 p-2 duration-200 rounded-full'>
                         <FaCopy size={15} />
                     </button>
                     <Notification message="Link copied to clipboard!" notificationstatus={showNotificationWeb} />
-                </div>
+                </div> */}
                 <a href="/" className="mt-10 sm:mx-8 fl font-bold flex justify-center items-center">
                     <MdOutlineCloseFullscreen size={32} className=" duration-300 hover:text-white  w-16 h-16 p-[0.9rem] rounded-full backdrop-blur-sm border-[1px] shadow-xl " />
                     <motion.div className="  border-[1px] absolute w-16 h-16 rounded-full z-10 flex items-center justify-center  "
