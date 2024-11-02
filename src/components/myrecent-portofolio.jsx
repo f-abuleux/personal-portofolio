@@ -31,7 +31,7 @@ export default function RecentPortofolio() {
                 </div>
                 <p className="my-5">COMING-SOON</p>
                 <div className="flex justify-start flex-wrap gap-10">
-                    <UnfinishCart description="Website dengan isi hasil karya karya 3D saya selama menjadi 3D Generalist" title="Advance Event Ticketing - NexVent"   img={nextvent1} img2={nextvent2} img3={nextvent3} img4={nextvent4} link={"/onprogress/nexvent"} />
+                    <UnfinishCart description="Website untuk membuatan event serta pembelian ticket event terupdate dengan specs dan fitur yang lebih advance" title="Advance Event Ticketing - NexVent"   img={nextvent1} img2={nextvent2} img3={nextvent3} img4={nextvent4} link={"/onprogress/nexvent"} />
                 </div>
             </div>
         </div>

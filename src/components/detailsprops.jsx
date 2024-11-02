@@ -7,13 +7,19 @@ import nextjs from "../assets/next-js.svg"
 import { FaReact } from "react-icons/fa";
 import restapi from "../assets/restapi.png"
 import { FaGithub } from "react-icons/fa";
+import htmx from "../assets/logos/htmx.svg"
 
 export default function DetailsProps() {
     return (
         <div className="flex items-center justify-center">
-            <div className="p-5 mt-20 sm:w-[1150px] text-left flex flex-col justify-cr gap-5">
-                <p className="text-left font-bold text-[20px]">Properti </p>
-                <p>Dalam pembuatan website-website diatas saya menggunakan properti/framework, libraries, maupun bahasa : </p>
+
+            <div className="p-5 mt-20 sm:w-[1150px] text-left flex flex-col justify-cr gap-5" id="carousellogo">
+                <div className="sm:w-[1150px] text-left flex flex-col gap-5">
+                    <p className="text-left font-bold text-[20px] flex items-center gap-2"><p>Specs </p><img src={htmx} alt="" className="w-6" />:</p>
+                    <p>In developing websites, I apply modern technologies to ensure optimal and responsive results. On the frontend, I build dynamic components and interactive interfaces adaptable to various devices. With smooth animations, I create appealing visual transitions and provide flexible content management for quick updates.
+
+                        On the backend, I design a fast, organized structure to ensure seamless database integration. Clean code structure aids maintainability, and robust input validation safeguards data security. This approach results in functional, secure, and scalable websites. </p>
+                </div>
                 <div className="flex p-4 items-center gap-2 flex-col">
                     <div className="flex  flex-wrap items-center gap-10">
                         <FaHtml5 size={44} color="grey" />
