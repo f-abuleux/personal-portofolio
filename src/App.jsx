@@ -21,6 +21,7 @@ import hero3 from "./assets/Grocery Store.png"
 import hero4 from "./assets/unpublish/EventUs1.png"
 import hero5 from "./assets/onprogress/NexVent5.png"
 import UnfinishWorkArt from './Pages/UnfinishWorkArts';
+import BgAnimate from './Pages/BgAnimate';
 
 
 
@@ -31,6 +32,7 @@ export default function App() {
     <div className="font-[HelveticaNeueCyr]" id="app">
       <Router>
         <Routes>
+          <Route path='/bg-animate' element={<BgAnimate/>}/>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path={`/details/3dworkart`} element={<WorkArt specsimg1={react} specsimg2={css3} specsimg3={javascript} specsimg4 specsimg5 notes={<p className="text-[12px] sm:mx-14 ">Notes : <span className='font-bold'>"npm install"</span> then <span className='font-bold'>"npm run dev"</span> run localhost</p>} website='https://front-end-vol1.vercel.app/' repository="https://github.com/f-abuleux/Front-End-vol1.git" desicription="Forkaa is a digital gallery showcasing my 3D work, developed throughout my journey in mastering 3D art—from modeling and texturing to animating. Through this site, I aim to present the evolution of my skills and explorations in three-dimensional visual art, encompassing the creation of forms, detailed texturing, and motion design to enhance the visual experience. Each piece reflects my dedication and innovation in the 3D industry." title="Forkaa" hero={hero1} />} />
