@@ -2,10 +2,10 @@ import { useScroll } from "framer-motion";
 import { useEffect, useState } from "react";
 
 export default function BgAnimate() {
-    const totalImages = 150; // Total gambar
+    const totalImages = 150;
     const { scrollYProgress } = useScroll(); 
     const [number, setNumber] = useState(1); 
-    const [gambar, setGambar] = useState(`/src/assets/solo_portofolio_pp/0001.jpg`);
+    const [gambar, setGambar] = useState(`/solo_portofolio_pp/0001.jpg`);
 
     useEffect(() => {
         const unsubscribe = scrollYProgress.onChange((progress) => {
@@ -16,7 +16,7 @@ export default function BgAnimate() {
 
             if (newNumber !== number) {
                 setNumber(newNumber);
-                setGambar(`/src/assets/solo_portofolio_pp/${String(newNumber).padStart(4, "0")}.jpg`); 
+                setGambar(`/solo_portofolio_pp/${String(newNumber).padStart(4, "0")}.jpg`); 
             }
         });
         return () => unsubscribe(); 
