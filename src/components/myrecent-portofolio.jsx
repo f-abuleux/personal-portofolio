@@ -1,6 +1,7 @@
 import { FinishCart } from "./finish-work";
 import img1 from '../assets/3DArt.png'
-import img2 from '../assets/Company Profile.png'
+import img2 from '../assets/projects/formici.png'
+import imgNiskarasa from '../assets/projects/niskarasa.png'
 import img3 from '../assets/Grocery Store.png'
 import { UnfinishCart } from "./unfinish-work";
 import eventus1 from '../assets/unpublish/EventUs1.png'
@@ -27,9 +28,10 @@ export default function RecentPortofolio() {
                 <p className="font font-bold text-[24px] text-center">My Recent Work</p>
                 <p className="my-5">FINISH</p>
                 <div className="flex justify-start flex-wrap gap-16">
-                    <FinishCart description="Website dengan isi hasil karya karya 3D saya selama menjadi 3D Generalist" title="3D Work Arts" img={img1} link="/details/3dworkart" />
-                    <FinishCart description="Website dengan tema memperkenalkan sebuah company detail dari company, service yang diberikan, organisasi yang ada didalamnya" title="Company Profile - Formici" img={img2} link="/details/formici" />
-                    <FinishCart description="Website untuk berbelanja kebutuhan sehari hari menyediakan produk-produk yang digunakan dirumah sehari-hari" title="Grocery Store App - Bask-it" img={img3} link="/details/bask-it" />
+                    <FinishCart description="Website platform undangan pernikahan online untuk membuat dan membagikan undangan digital" title="Online Wedding Invitation - Niskarasa" img={imgNiskarasa} link="/details/niskarasa" />
+                    <FinishCart description="Website galeri digital berisi hasil karya 3D saya selama menjadi 3D Generalist" title="3D Work Arts" img={img1} link="/details/3dworkart" />
+                    <FinishCart description="Website company profile Formici Creative Lab, studio branding melalui pembuatan website" title="Company Profile - Formici" img={img2} link="/details/formici" />
+                    <FinishCart description="Website untuk berbelanja kebutuhan rumah tangga sehari-hari secara online" title="Grocery Store App - Bask-it" img={img3} link="/details/bask-it" />
                 </div>
                 <p className="my-5">COMING-SOON</p>
                 <div className="flex justify-start flex-wrap gap-10">

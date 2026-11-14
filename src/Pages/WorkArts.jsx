@@ -50,23 +50,21 @@ export default function WorkArt({ specsimg1, specsimg2, specsimg3, specsimg4, sp
                         <img src={htmx} alt="" className="h-4" />
                         :
                     </div>
-                    <img src={specsimg1} alt="" className='h-8 hover:scale-105 hover:rotate-6 duration-100' />
-                    <img src={specsimg2} alt="" className='h-8 hover:scale-105 hover:rotate-6 duration-100' />
-                    <img src={specsimg3} alt="" className='h-8 hover:scale-105 hover:rotate-6 duration-100' />
-                    <img src={specsimg4} alt="" className='h-8 hover:scale-105 hover:rotate-6 duration-100' />
-                    <img src={specsimg5} alt="" className='h-8 hover:scale-105 hover:rotate-6 duration-100' />
+                    {[specsimg1, specsimg2, specsimg3, specsimg4, specsimg5].filter(src => typeof src === 'string').map((src, i) => <img key={i} src={src} alt="" className='h-8 hover:scale-105 hover:rotate-6 duration-100' />)}
                 </div>
-                <p className="mt-10 sm:mx-8 fl font-bold">Repository Link : </p>
-                <div className=' sm:mx-8 bg-gray-600/10 shadow-md backdrop-blur-sm p-3 rounded-[10px] text-gray-500 flex justify-between items-center'>
-                    <a href={repository} target='_blank' className='hover:underline duration-300 ml-2'>{repository}</a>
-                    <button onClick={copyToClipboardRepository} className='active:bg-gray-400 p-2 duration-200 rounded-full'>
-                        <FaCopy size={15} />
-                    </button>
-                    <Notification message="Link copied to clipboard!" notificationstatus={showNotificationRepo} />
-                </div>
-                {
-                    notes
-                }
+                {repository && (<>
+                    <p className="mt-10 sm:mx-8 fl font-bold">Repository Link : </p>
+                    <div className=' sm:mx-8 bg-gray-600/10 shadow-md backdrop-blur-sm p-3 rounded-[10px] text-gray-500 flex justify-between items-center'>
+                        <a href={repository} target='_blank' className='hover:underline duration-300 ml-2'>{repository}</a>
+                        <button onClick={copyToClipboardRepository} className='active:bg-gray-400 p-2 duration-200 rounded-full'>
+                            <FaCopy size={15} />
+                        </button>
+                        <Notification message="Link copied to clipboard!" notificationstatus={showNotificationRepo} />
+                    </div>
+                    {
+                        notes
+                    }
+                </>)}
                 <p className="mt-10 sm:mx-8 fl font-bold">Website : </p>
                 <div className=' sm:mx-8 bg-gray-600/10 shadow-md backdrop-blur-sm p-3 rounded-[10px] text-gray-500 flex justify-between items-center'>
                     <a href={website} target='_blank' className='hover:underline duration-300 ml-2'>{website}</a>
